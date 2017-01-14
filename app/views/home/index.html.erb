@@ -3,7 +3,7 @@
 <h2>Current events</h2>
 
 <ul>
-  <li>Wildlife Photographer of the Year</li>
-  <li>Hampstead Heath Bathing Ponds</li>
-  <li>Landscape Photographer of the Year</li>
+  <% @events.each do |event| %>
+    <li><%= event.name %>
+  <% end %>
 </ul>
