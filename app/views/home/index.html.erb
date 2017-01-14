@@ -4,6 +4,6 @@
 
 <ul>
   <% @events.each do |event| %>
-    <li><%= event.name %>
+    <li><%= event.name %>: <%= event.start_date %> to <%= event.end_date %></li>
   <% end %>
 </ul>
