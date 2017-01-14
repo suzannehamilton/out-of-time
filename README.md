@@ -2,18 +2,23 @@
 
 # Development
 
-* Install postgresql
+* Install postgresql and start the service
 * Create the database user in postgres:
 
  ```
  create role out_of_time with createdb login password 'timeout';
  ```
 
+* Install the project's dependencies:
+ ```
+ bundle install
+ ```
+
 * Initialize the database:
 
  ```
- rails db:migrate
  rails db:setup
+ rails db:migrate
  ```
 
 * Start the Rails sever:
